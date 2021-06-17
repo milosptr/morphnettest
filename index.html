@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
+
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="main_wrap">
+        <div class="form_header">
+            <div class="progress-bar">
+             <div class="round1" data-value="0.25" data-size="200" data-thickness="12" id="pct1" style="display: none;" >
+               <strong></strong>
+             </div>
+             <div class="round2" data-value="0.50" data-size="200" data-thickness="12" id="pct2" style="display: none;" >
+              <strong></strong>
+            </div>
+            <div class="round3" data-value="0.75" data-size="200" data-thickness="12" id="pct3" style="display: none;">
+              <strong></strong>
+            </div>
+            <div id="ch" style="display: none;" class="valid5"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2"><circle class="path circle" fill="none" stroke="#ffffff" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/><polyline class="path check" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/></svg></div>
+            </div>
+            <div>
+            <p style="font-size: 12px">New York State</p>
+            <h3>Request for Contact</h3>
+          </div>
+        </div>
+        <div>
+          <form class="form_wrap">
+            <div class="user-box">
+              <div>
+                <input class="input" type="text" name="" required />
+                <label>First Name</label>
+                <span class="border"></span>
+              </div>
+              <span id="val" class="step">1</span>
+            </div>
+            <div class="user-box">
+              <div>
+                <input class="input2" type="text" name="" required />
+                <label>Last Name</label>
+                <span class="border"></span>
+              </div>
+              <span id="val2" class="step">2</span>
+            </div>
+            <div class="user-box">
+              <div>
+                <input class="input3" type="text" name="" required />
+                <label>Email Address</label>
+                <span class="border"></span>
+              </div>
+              <span id="val3" class="step">3</span>
+            </div>
+
+            <div class="user-box-radio">
+              <p>What is the best time to contact you?</p>
+              <div class="radio_wrap">
+                <span
+                  style="
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                  "
+                >
+                  <input
+                    type="radio"
+                    class="input4"
+                    id="test1"
+                    name="radio-group"
+                  />
+                  <label for="test1">Monday 3pm</label>
+                  <span class="check"></span>
+                </span>
+                <span
+                  style="
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: flex-end;
+                  "
+                >
+                  <input
+                    type="radio"
+                    class="input4"
+                    id="test2"
+                    name="radio-group"
+                  />
+                  <label for="test2">Tuesday 3pm</label>
+                  <span class="check"></span>
+                </span>
+              </div>
+
+              <span id="val4" class="step">4</span>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
     
-</body>
+ 
+  </body>
+  
 </html>
